@@ -1,0 +1,184 @@
+@import "menu-icon.css";
+@import "close-icon.css";
+@import "home-shop-address.css";
+@font-face {
+    font-family: DeliciousRoman;
+    src: url(DINWeb-Medium.woff);
+    font-weight: 400;
+}
+@font-face {
+    font-family: ItalicRoman;
+    src: url(MonicaScript.ttf);
+    font-weight: 400;
+}
+h2 , label,a ,span {
+	font-family: DeliciousRoman;
+}
+body {
+	height: 660px;
+    width: 1350px;
+    background-image: url(story-bck.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: -8px;
+    padding: 0px;
+}
+
+.story-page  {
+    height: 300px;
+    width: 700px;
+    position: relative;                            /*------story-page------*/
+    left: 25%;
+    opacity: 0;
+    transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+   
+}
+.story-page p {
+    font-family: ItalicRoman;
+    color: white;
+    font-size: 66px;
+    text-align: center;
+    margin-top: -41px;
+}
+.story-page h2 {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 116px;
+}
+
+.story-page a {
+	padding: 13px 40px;
+    border-radius: 23px;
+    background-color: #78A222;
+    position: absolute;
+    color: white;
+    /* left: 205px; */
+    text-decoration: none;
+    opacity: 0;
+    left: 11px;
+    top: 10px;
+    transition: padding 1s,top 1s,left 1s,border-radius 1s;
+}
+.story-page label{
+
+    background-color: #78A222;
+    padding: 33px 118px;
+    border-radius: 35px;
+    position: absolute;
+   
+    /* background-color: rgba(0,0,0,0.5); */
+    background-color: rgba(0,0,0,0);
+    top: 75%;
+    left: 25%;
+    transition: left 1s;
+    -webkit-transition: left 1s;
+}
+.story-page:hover {
+	opacity: 1;
+}
+.story-page:hover label{
+	
+	left: 33%;
+	background-color: rgba(82,135,0,0.5);
+}
+.story-page:hover a{	
+	opacity: 0.9;
+}
+.borderRadius > a:hover {
+	padding: 24px 51px;                                  /*------story-page------*/
+    top: 1px;
+    left: 1px;
+    border-radius: 32px;
+}
+
+
+.background-img {                               /*--------menu-after-------*/
+    display: none;
+}
+.background-img a {              
+
+    text-decoration: none;
+}
+.background-img h2 {
+    color: white;
+    font-size: 60px;
+    font-family: ItalicRoman;                          
+}
+.background-img > div {
+    display: inline-block;
+    top: 215px;
+    height: 100px;
+    padding-left: 190px;
+    position: relative;
+    transition: top 500ms;
+    -webkit-transition: 500ms;
+}
+
+.border-line {                                       /*--------menu-footer--------*/
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    display: none;
+    margin-top: -35px;
+}
+.menu-footer {
+    display: none;
+}
+
+.menu-footer label {
+    padding: 13px 40px;
+    border-radius: 23px;
+    border: 2px solid;
+    border-color: white;
+    position: relative;
+    top: 400px;
+    left: 300px;
+    transition: border-color 1s;
+    -webkit-transition: border-color 1s; 
+
+}
+.menu-footer label:hover {
+    background-color: #4c8018;
+    border-color: #4c8018;
+
+}
+.menu-footer label > span {
+    color: white;
+    text-decoration: none;
+
+}
+.menu-footer .shop:before {
+    content: " ";
+    padding: 0px 7px;
+    border-radius: 9px;
+    border: 1px solid white;
+    margin-right: 10px;
+
+}
+.menu-footer .shop:after {
+    content: " ";
+    border: 1px solid white;
+    width: 5px;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 53px;
+    top: 29px;
+    
+}
+.menu-footer > a  {
+    position: relative;
+    top: 400px;
+    left: 315px;
+    text-decoration: none;
+    color: white;
+    padding-left: 100px;
+}
+.menu-footer > span {
+    position: relative;
+    top: 400px;
+    left: 315px;
+    padding-left: 100px;
+    color: white;
+}

@@ -1,0 +1,51 @@
+@import "healthy-farm-menu.css";
+@import "healthy-farm-animation.css";
+
+@font-face {
+    font-family: DeliciousRoman;
+    src: url(DINWeb-Medium.woff);
+    font-weight: 400;
+}
+
+body h1,span,p,li,a,label {
+	font-family: DeliciousRoman;
+}
+.whole {
+	margin-left: 20px;
+    margin-right: 6px;
+	height: auto;
+	width: auto;
+}
+
+.below-menu {
+	display: block;
+	margin: 30px 43%;
+	margin-top: 40px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 350%;
+    letter-spacing: 9px;
+}
+
+
+.menu-after-hidden {                     /*menu after hidden*/
+	width: 20px;
+	display: none;
+}
+.menu-after-hidden > div {
+	height: 2px;
+	width: 100%;
+	border: 1px solid #7fb700;
+	border-radius: 2px;
+	background-color: #7fb700;
+	margin-top: 2px;
+    opacity: 0.8;
+}
+label {
+    display: none;                     /*label for menu*/
+}
+
+
+

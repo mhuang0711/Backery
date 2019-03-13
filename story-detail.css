@@ -1,0 +1,188 @@
+@import "menu-icon.css";
+@font-face {
+    font-family: DeliciousRoman;
+    src: url(DINWeb-Medium.woff);
+    
+}
+@font-face {
+    font-family: ItalicRoman;
+    src: url(MonicaScript.ttf);
+    font-weight: 400;
+}
+a,label, .bottom-imgs span {
+	font-family: DeliciousRoman;
+    color: white;
+}
+nav {
+     padding: 17px 35px;
+
+}
+nav a{
+     text-decoration: none;
+     color: gray;
+}
+nav > label{
+     left: 18px;
+}
+nav:hover {                                       /*------menu------*/
+    border-color: gray;
+    background-color: white;
+}
+
+.vertical-word {
+    position: fixed;
+    width: 20px;
+    height: 100px;
+    top: 320px;
+    left: 3%;
+    font-family: DeliciousRoman;
+    font-size: 18px;
+    text-align: center;
+    color: gray;
+}
+.aside-line {
+    
+    height: 90px;
+    width: 1px;
+    background-color: gray;
+    margin-left: 8px;
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 800px) {
+    .beside-story-line {
+        width: 90px;
+        height: 1px;
+        background-color: gray;
+        width: 90px;
+        height: 1px;
+        background-color: gray;
+        position: absolute;
+        top: 70%;
+        left: 44%;
+    }
+    .story2 .beside-story-line {
+        left: -90px;
+        top: 80%;
+    }
+    .vertical-word-right {
+        left: 96%;
+    }
+}
+
+.bck-img {
+    width: 1370px;
+    height: 600px;
+    background-image: url(story-bck.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: -8px;
+    padding: 0px;
+    position: relative;
+    margin-top: 50px;
+    box-shadow: 20px 20px 10px #888888;    /*-------box-shadow-------*/
+}
+
+.product-showing {
+    display: none;
+}
+.product-showing span,p {
+    opacity: 0.7;
+}
+.product-showing > div{
+    margin-top: 150px;
+}
+
+.product-showing h2 {
+    font-family: DeliciousRoman;
+    text-align: center;    
+    padding: 20px;
+    font-size: 60px;
+}
+.product-showing > p {
+    font-family: ItalicRoman;
+    text-align: center;
+     font-size: 40px;
+}
+
+.product-showing .story1 {
+    margin-left: 15%;
+    position: relative;
+}
+.product-showing .story2 {
+    margin-left: 50%;
+    position: relative;
+    margin-bottom: 200px;
+}
+.middle-word {
+    margin:150px 190px;
+}
+.middle-word span {
+    font-family: DeliciousRoman;
+    font-size: 30px;
+ }
+ .middle-word p {
+    font-family: DeliciousRoman;
+    text-align: left;
+    font-size: 21px;
+    margin-top: 50px;
+    padding-right: 200px;
+    color: #4f4f4f;
+
+ }
+
+ @media screen and (min-width: 800px) {
+    .story1 span {
+        font-family: DeliciousRoman;
+        font-size: 20px;
+        position: absolute;
+        top: 49%;
+        left: 47%;
+    }
+    .story2 span {
+        font-family: DeliciousRoman;
+        font-size: 20px;
+        position: absolute;
+        top: 63%;
+        left: -58%;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .story1 span {
+    font-family: DeliciousRoman;
+    font-size: 20px;
+    position: absolute;
+    top: 420px;
+    left: 0px;
+    }
+    .story2 span {
+    font-family: DeliciousRoman;
+    font-size: 20px;
+    position: absolute;
+    top: 420px;
+    left: 0px;
+}
+
+    .story1 .beside-story-line {
+    width: 90px;
+    height: 1px;
+    background-color: gray;
+    width: 90px;
+    height: 1px;
+    background-color: gray;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    }
+    .story2 .beside-story-line {
+    width: 90px;
+    height: 1px;
+    background-color: gray;
+    width: 90px;
+    height: 1px;
+    background-color: gray;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    }
+}

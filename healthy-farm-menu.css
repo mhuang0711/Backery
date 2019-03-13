@@ -1,0 +1,165 @@
+@media screen and (min-width: 770px) {             /*normal*/
+    ul.menu {
+        margin: 0 9%;
+        width: 80%;
+    }
+    ul.menu > li {
+        display: inline-block;
+        font-size: 85%;
+        margin-top: -2px;
+        position: relative;
+        width: 13%;
+        text-align: center;
+        height: 50px;
+    }
+
+    a.login {
+        float: right;
+        margin-right: 3%;
+        margin-top: -52px;
+        color: #8c8c8c;
+        text-decoration: none;
+    }
+    ul.menu  li a {
+	   text-decoration: none;
+	   color: #8c8c8c;
+    }
+    ul.menu  li a:hover {
+	   color: #7fb700;
+    }
+
+
+    ul.menu  ul {
+    	border: 1px solid; /*child-menu*/     
+        width: 100%;
+        top: 30px;
+        padding: 20%;
+        height: 140px;
+        left: 20px;
+        color: #7fb700;
+        position: absolute;
+        display: none;
+        background-color: white;
+        opacity: 0.9;
+    }
+    ul.menu li:hover >ul {
+    	display:block;
+        left: -20%;
+        top: 30px;
+    }
+
+    ul.menu ul li {                                
+    	list-style: none;
+        padding: 6%;
+        display: block;
+        padding-left: -17%;
+        margin-left: -78%;
+    }                                        
+
+    ul.menu > li:hover:after {
+        content: "";
+        border-bottom: 10px solid #7fb700; /*trangle-of-menu*/
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        position: absolute;
+        left: 42%;
+        top: 20px;
+    }
+}
+
+
+
+@media screen and (max-width: 770px) {                                 /*ipad/iphone*/
+    #menu-after { 
+        display: inline-block; 
+    }
+    #label-for-menu { 
+        display: inline-block;
+        margin-left: 5px;                                            /*label for menu*/
+        color: #8c8c8c;
+    }               
+
+    ul.menu { 
+        opacity: 0;
+        -webkit-transition: height 1s;
+        transition: height 1s;
+        height: 0px;
+        width: 100%;
+    }
+    ul.menu > li {
+        width: 100%;
+        text-align: center;
+        display: block;        
+    }
+    ul.menu li > a {
+        color: #8c8c8c;
+        height: 0px;
+        transition: height 1s;
+        border:1px;
+    }
+
+    a.heading ~ul {
+        border: 1px solid;
+        width: 50%;
+        padding: 0px;   
+        color: #EEEEEE;
+        opacity: 0;
+        background-color: #EEEEEE;
+        margin: 0 auto;
+        height: 0px;
+        transition: height 1s ,opacity 1s;                 
+        overflow: hidden;/*make behind li work*/
+    }
+    a.heading ~ul >li {
+        display: block;
+        line-height: 28px;
+    }
+
+    ul.menu.open {
+        margin: 0;
+        padding: 0;
+        display: block;
+        height: 350px;
+        opacity: 1;
+    }
+
+    ul.menu.open > li {
+        line-height: 50px;
+        
+    }
+
+    a.login { 
+        color: #8c8c8c;
+        opacity: 0;
+        text-align: center;
+        line-height: 50px;
+        transition: opacity 1s;
+        display: none;
+     }
+
+    
+    a.heading.open ~ul.home {            /*diffrent ul heights*/
+        height: 140px;
+        opacity: 1;
+    }
+    a.heading.open ~ul.about-us {        
+        height: 50px;
+        opacity: 1;
+    }
+    a.heading.open ~ul.features {
+        height: 100px;
+        opacity: 1;
+    }
+    a.heading.open ~ul.protfolio {
+        height: 150px;
+        opacity: 1;
+    }
+    a.heading.open ~ul.blog {
+        height: 50px;
+        opacity: 1;
+    }
+    a.heading.open ~ul.contact-us {         /*diffrent ul heights*/
+        height: 150px;
+        opacity: 1;
+    }
+}

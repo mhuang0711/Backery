@@ -1,0 +1,6 @@
+@import "product-fruit.css";
+@import "aside-icon.css";
+
+.bck-img {
+ background-image: url(cakes.jpg);
+}

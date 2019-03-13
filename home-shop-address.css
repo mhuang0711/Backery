@@ -1,0 +1,45 @@
+@import "menu-icon.css";
+@font-face {
+    font-family: DeliciousRoman;
+    src: url(DINWeb-Medium.woff);
+    font-weight: 400;
+}
+h2 , label,p {
+    font-family: DeliciousRoman;
+}
+
+
+.shop-address  {
+	line-height: 50px;
+    width: 500px;
+    margin: 100px 30%;
+    display: none;
+}
+.shop-address h2 , p {
+
+	color: white;
+
+}
+.shop-address h2 {
+	font-size: 25px;
+}
+.shop-address p {
+	font-size: 20px;
+}
+.contact {
+    line-height: 50px;
+    width: 500px;
+    margin: 100px 30%;
+    display: none;
+}
+.contact h2 , p {
+
+    color: white;
+
+}
+.contact h2 {
+    font-size: 25px;
+}
+.contact p {
+    font-size: 20px;
+}

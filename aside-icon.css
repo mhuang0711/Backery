@@ -1,0 +1,25 @@
+.vertical-word {
+    position: fixed;
+    width: 20px;
+    height: 100px;
+    top: 320px;
+    left: 3%;
+    font-family: DeliciousRoman;
+    font-size: 18px;
+    text-align: center;
+    color: gray;
+}
+.aside-line {
+    
+    height: 90px;
+    width: 1px;
+    background-color: gray;
+    /* text-align: center; */
+    margin-left: 8px;
+    margin-top: 10px;
+}
+
+.vertical-word-right {
+    left: 96%;
+}
+

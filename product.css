@@ -1,0 +1,148 @@
+@import "menu-icon.css";
+@import "close-icon.css";
+@import "home-shop-address.css";
+@font-face {
+    font-family: DeliciousRoman;
+    src: url(DINWeb-Medium.woff);
+    font-weight: 400;
+}
+@font-face {
+    font-family: ItalicRoman;
+    src: url(MonicaScript.ttf);
+    font-weight: 400;
+}
+a,label  {
+	font-family: DeliciousRoman;
+    color: white;
+}
+body {
+	height: 660px;
+    width: 1370px;
+    background-image: url(product.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: -8px;
+    padding: 0px;
+}
+
+
+.product {
+
+    margin-left: 210px;
+    margin-top: 20px;
+}
+.product > div {
+    padding: 50px;
+    width: 80px;
+}
+.product a {
+    font-size: 35px;
+    text-decoration: none;
+}
+.border-line {
+    height: 2px;
+    width: 0px;
+    background-color: white;
+    transition: width 1s;
+    -webkit-transition: width 1s;
+}
+.product >div:hover .border-line{
+    width: 94px;
+}
+.product >div:hover:last-child .border-line{
+    width: 125px;
+}
+
+
+.background-img {                               /*--------menu-after-------*/
+    display: none;
+}
+.background-img a {              
+
+    text-decoration: none;
+}
+.background-img h2 {
+    color: white;
+    font-size: 60px;
+    font-family: ItalicRoman;                          
+}
+.background-img > div {
+    display: inline-block;
+    top: 215px;
+    height: 100px;
+    padding-left: 190px;
+    position: relative;
+    transition: top 500ms;
+    -webkit-transition: 500ms;
+}
+
+.background-img .border-line {                                       /*--------menu-footer--------*/
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    display: none;
+    margin-top: -35px;
+}
+.menu-footer {
+    display: none;
+}
+
+.menu-footer label {
+    padding: 13px 40px;
+    border-radius: 23px;
+    border: 2px solid;
+    border-color: white;
+    position: relative;
+    top: 400px;
+    left: 300px;
+    transition: border-color 1s;
+    -webkit-transition: border-color 1s; 
+
+}
+.menu-footer label:hover {
+    background-color: #4c8018;
+    border-color: #4c8018;
+
+}
+
+.menu-footer label >span {
+    color: white;
+    text-decoration: none;
+
+}
+.menu-footer .shop:before {
+    content: " ";
+    padding: 0px 7px;
+    border-radius: 9px;
+    border: 1px solid white;
+    margin-right: 10px;
+
+}
+.menu-footer .shop:after {
+    content: " ";
+    border: 1px solid white;
+    width: 5px;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 53px;
+    top: 29px;
+    
+}
+.menu-footer > a {
+    position: relative;
+    top: 400px;
+    left: 315px;
+    text-decoration: none;
+    color: white;
+    padding-left: 100px;
+}
+.menu-footer > span {
+    font-family: DeliciousRoman;
+    position: relative;
+    top: 400px;
+    left: 315px;
+    padding-left: 100px;
+    color: white;
+}
+
+
